@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import Img1 from "../../assets/images/img (4).jpg";
 
 /* ------------------ Motion ------------------ */
 const fadeUp = {
@@ -46,7 +47,7 @@ export default function AboutAndEngagementSection() {
           className="overflow-hidden rounded-2xl"
         >
           <img
-            src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+            src={Img1}
             alt="Community development and sustainable engineering projects"
             className="h-[220px] w-full object-cover sm:h-[300px] md:h-[380px]"
           />

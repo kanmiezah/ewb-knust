@@ -10,6 +10,8 @@ import {
   ShowerHead,
 } from "lucide-react";
 
+import Img1 from "../../assets/images/2.jpg";
+
 /* ------------------ Data ------------------ */
 const engagements = [
   { title: "Health", icon: HeartPulse },
@@ -66,9 +68,9 @@ export default function AboutAndEngagementSection() {
           className="overflow-hidden rounded-2xl"
         >
           <img
-            src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+            src={Img1}
             alt="Community development and sustainable engineering projects"
-            className="h-[220px] w-full object-cover sm:h-[300px] md:h-[380px]"
+            className="h-[300px] w-full object-cover sm:h-[300px] md:h-[380px]"
           />
         </motion.div>
 

@@ -48,7 +48,7 @@ export default function AboutAndEngagementSection() {
         >
           <img
             src={Img1}
-            alt="Community development and sustainable engineering projects"
+            alt="hero project img"
             className="h-[220px] w-full object-cover sm:h-[300px] md:h-[380px]"
           />
         </motion.div>

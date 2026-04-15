@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+@import "tailwindcss";
+
+/* ─── Design System Custom Properties ─── */
+:root {
+  --color-ewb-blue: #117DBE;
+  --color-ewb-maroon: #8F1838;
+  --color-ewb-yellow: #FCB712;
+  --color-ink: #111111;
+  --color-surface: #FCFCFC;
+  --color-muted: #F5F5F3;
+  --radius-card: 1.5rem;
+  --radius-hero: 3rem;
+}
+
+/* ─── Base ─── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+::selection {
+  background-color: #117DBE;
+  color: white;
+}
+
+/* ─── Smooth image loading ─── */
+img {
+  transition: opacity 0.4s ease;
+}
+
+/* ─── Custom scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #117DBE40;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #117DBE80;
+}

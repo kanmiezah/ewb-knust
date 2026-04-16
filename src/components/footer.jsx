@@ -11,10 +11,10 @@ export default function Footer() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-[#117DBE] opacity-10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
           
           {/* Brand Column (Span 4) */}
-          <div className="md:col-span-4 lg:col-span-4 flex flex-col items-start">
+          <div className="col-span-2 md:col-span-4 lg:col-span-4 flex flex-col items-start">
             <Link to="/" onClick={scrollToTop} className="mb-8 flex items-center gap-2.5">
               <img src={Logo} alt="EWB Logo" className="h-10 w-auto opacity-90" />
               <span className="font-bold tracking-widest uppercase text-sm">EWB-KNUST</span>
@@ -39,14 +39,14 @@ export default function Footer() {
           </div>
 
           {/* Links Columns (Span 2 each) */}
-          <div className="md:col-span-2 lg:col-span-2 flex flex-col gap-4">
+          <div className="col-span-1 md:col-span-2 lg:col-span-2 flex flex-col gap-4">
             <span className="text-[11px] font-bold tracking-widest text-[#117DBE] uppercase mb-1">Company</span>
             <Link to="/about" onClick={scrollToTop} className="text-[17px] text-white/50 hover:text-white transition-colors">About Us</Link>
             <Link to="/projects" onClick={scrollToTop} className="text-[17px] text-white/50 hover:text-white transition-colors">Projects</Link>
             <Link to="/blog" onClick={scrollToTop} className="text-[17px] text-white/50 hover:text-white transition-colors">Journal</Link>
           </div>
 
-          <div className="md:col-span-2 lg:col-span-2 flex flex-col gap-4">
+          <div className="col-span-1 md:col-span-2 lg:col-span-2 flex flex-col gap-4">
             <span className="text-[11px] font-bold tracking-widest text-[#117DBE] uppercase mb-1">Engage</span>
             <Link to="/membership" onClick={scrollToTop} className="text-[17px] text-white/50 hover:text-white transition-colors">Get Involved</Link>
             <Link to="/events" onClick={scrollToTop} className="text-[17px] text-white/50 hover:text-white transition-colors">Events</Link>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Details (Span 4) */}
-          <div className="md:col-span-4 lg:col-span-4 flex flex-col gap-6">
+          <div className="col-span-2 md:col-span-4 lg:col-span-4 flex flex-col gap-6">
             <span className="text-[11px] font-bold tracking-widest text-[#117DBE] uppercase mb-1">Contact Info</span>
             
             <div>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 sm:mt-16 md:mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[11px] text-white/40 tracking-wider">
             © {new Date().getFullYear()} ENGINEERS WITHOUT BORDERS – KNUST.
           </p>

@@ -51,7 +51,7 @@ export default function BlogSection() {
              <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-black/30 block mb-4">
                Our Journal
              </span>
-             <h2 className="text-3xl md:text-5xl font-medium text-[#111] tracking-tight leading-none">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-medium text-[#111] tracking-tight leading-none">
                Latest from the field
              </h2>
            </div>
@@ -75,7 +75,7 @@ export default function BlogSection() {
         >
            
            {/* Image Frame (Flexible but dominant) */}
-           <div className="w-full md:w-[55%] h-[350px] sm:h-[450px] md:h-auto md:min-h-[500px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden relative group">
+           <div className="w-full md:w-[55%] h-[280px] sm:h-[350px] md:h-auto md:min-h-[500px] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden relative group">
              <Link to={`/blog/${heroPost.slug.current}`} className="block w-full h-full">
                <img
                  src={heroPost.mainImage?.asset?.url || "https://via.placeholder.com/1200x800"}
@@ -94,7 +94,7 @@ export default function BlogSection() {
            </div>
 
            {/* Content Block */}
-           <div className="w-full md:w-[45%] flex flex-col justify-center px-4 sm:px-6 py-8 md:pl-2 md:pr-10">
+            <div className="w-full md:w-[45%] flex flex-col justify-center px-2 sm:px-6 py-6 sm:py-8 md:pl-2 md:pr-10">
               
               <div className="flex flex-wrap items-center gap-3 mb-6">
                  {heroPost.categories?.length > 0 ? (
@@ -117,7 +117,7 @@ export default function BlogSection() {
               </div>
 
               <Link to={`/blog/${heroPost.slug.current}`}>
-                <h3 className="text-3xl sm:text-4xl lg:text-[2.8rem] font-medium text-[#111] leading-[1.1] mb-6 tracking-tight hover:text-[#117DBE] transition-colors">
+                <h3 className="text-2xl sm:text-3xl lg:text-[2.8rem] font-medium text-[#111] leading-[1.1] mb-6 tracking-tight hover:text-[#117DBE] transition-colors">
                   {heroPost.title}
                 </h3>
               </Link>

@@ -135,7 +135,7 @@ export default function SinglePost() {
       <div className="flex flex-col items-center justify-center min-h-[70vh] bg-white px-4">
         <h2 className="text-2xl font-medium text-[#111] mb-2">Article Not Found</h2>
         <p className="text-sm text-black/50 mb-8">The post you are looking for does not exist.</p>
-        <Link to="/blog" className="px-6 py-3 bg-[#111] text-white text-[17px] font-semibold rounded-full hover:bg-[#222] transition">
+        <Link to="/blog" className="px-6 py-3.5 sm:py-3 bg-[#111] text-white text-[15px] sm:text-[17px] font-semibold rounded-full hover:bg-[#222] transition w-full sm:w-max text-center">
           Return to Journal
         </Link>
       </div>
@@ -181,7 +181,7 @@ export default function SinglePost() {
                 ))}
               </div>
             )}
-            <h1 className="text-3xl md:text-5xl lg:text-[4rem] font-medium text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-medium text-white leading-[1.1] tracking-tight mb-6">
               {post.title || "Untitled"}
             </h1>
             {post.subHeading && (
@@ -211,7 +211,7 @@ export default function SinglePost() {
               Journal
             </Link>
 
-            <div className="flex items-center gap-6 text-[17px] text-black/60 font-medium">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-sm sm:text-[17px] text-black/60 font-medium">
               {post.author?.name && (
                 <div className="flex items-center gap-2">
                   <User size={16} className="text-[#117DBE]" />

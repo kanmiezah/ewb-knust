@@ -19,7 +19,7 @@ export default function ActionCall() {
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/30 mb-5">
               Get Involved
             </span>
-            <h2 className="mb-4 text-3xl font-medium leading-tight text-white sm:text-4xl tracking-tight">
+            <h2 className="mb-4 text-2xl sm:text-3xl font-medium leading-tight text-white md:text-4xl tracking-tight">
               Build something{" "}
               <br className="hidden sm:block" />
               that matters
@@ -30,16 +30,16 @@ export default function ActionCall() {
               projects that change lives. Every hand counts.
             </p>
 
-            <div className="flex items-center gap-4">
-              <Link to="/membership" onClick={() => window.scrollTo(0, 0)}>
-                <button className="rounded-full bg-white px-7 py-3 text-[17px] font-semibold text-[#111] transition-all duration-300 hover:shadow-lg hover:scale-[1.03]">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 w-full">
+              <Link to="/membership" onClick={() => window.scrollTo(0, 0)} className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto rounded-full bg-white px-7 py-3.5 sm:py-3 text-[17px] font-semibold text-[#111] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                   Join EWB-KNUST
                 </button>
               </Link>
               <Link
                 to="/contact"
                 onClick={() => window.scrollTo(0, 0)}
-                className="text-white/60 hover:text-white text-[17px] font-medium transition-colors flex items-center gap-1.5"
+                className="text-white/60 hover:text-white text-[17px] font-medium transition-colors flex items-center justify-center gap-1.5 py-2"
               >
                 Contact us <span className="text-base">→</span>
               </Link>
@@ -47,7 +47,7 @@ export default function ActionCall() {
           </div>
 
           {/* Right image */}
-          <div className="relative hidden md:block">
+          <div className="relative h-48 sm:h-56 md:h-auto">
             <img
               src={ActionImg}
               alt="EWB community project"

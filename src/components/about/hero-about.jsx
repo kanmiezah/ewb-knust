@@ -6,7 +6,7 @@ export default function HeroAboutSection() {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <section className="relative w-full bg-[#117DBE] pt-32 pb-40 md:pt-36 md:pb-56 overflow-hidden">
+    <section className="relative w-full bg-[#117DBE] pt-28 pb-36 sm:pt-32 sm:pb-40 md:pt-36 md:pb-56 overflow-hidden">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1A95E0]/40 via-transparent to-[#0D6294]/30 pointer-events-none" />
 
@@ -25,7 +25,7 @@ export default function HeroAboutSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="text-[2.8rem] sm:text-5xl md:text-[3.5rem] lg:text-[4.5rem] font-medium text-white tracking-tight leading-[1.08]"
+            className="text-[2.2rem] sm:text-[2.8rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium text-white tracking-tight leading-[1.08]"
           >
             Empowering <br />
             communities, <br />
@@ -34,12 +34,12 @@ export default function HeroAboutSection() {
         </motion.div>
 
         {/* Right Image Container */}
-        <div className="absolute right-0 bottom-0 w-[85%] h-[50%] md:w-[50%] md:h-[110%] pointer-events-none z-0">
+        <div className="absolute right-0 bottom-0 w-[90%] h-[50%] sm:w-[85%] sm:h-[55%] md:w-[50%] md:h-[110%] pointer-events-none z-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.96, x: 40 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 1.1, ease: "easeOut" }}
-            className="relative w-full h-full rounded-tl-[3rem] md:rounded-tl-[4rem] overflow-hidden shadow-2xl"
+            className="relative w-full h-full rounded-tl-[2.5rem] md:rounded-tl-[4rem] overflow-hidden shadow-2xl"
           >
             <img
               src={Img1}
@@ -47,8 +47,9 @@ export default function HeroAboutSection() {
               className="w-full h-full object-cover object-center grayscale-[15%]"
               loading="eager"
             />
-            {/* Soft left edge blend */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#117DBE]/60 via-[#117DBE]/20 to-transparent w-1/3" />
+            {/* Soft edge blends for better legibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#117DBE] via-[#117DBE]/30 to-transparent w-1/2 md:w-1/3" />
+            <div className="absolute top-0 inset-x-0 h-1/3 bg-gradient-to-b from-[#117DBE] to-transparent md:hidden" />
           </motion.div>
         </div>
       </div>

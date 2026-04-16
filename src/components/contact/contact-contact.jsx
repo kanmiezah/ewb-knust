@@ -78,7 +78,7 @@ export default function ContactSection() {
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-black/30 block mb-5">
               Contact Detail
             </span>
-            <h2 className="text-3xl md:text-[2.8rem] font-medium text-[#111] mb-6 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-[2.8rem] font-medium text-[#111] mb-6 tracking-tight leading-tight">
               We're here to <br className="hidden md:block" /> empower communities
             </h2>
             <p className="text-[17px] leading-[1.8] text-black/50 font-light mb-12 max-w-sm">
@@ -264,7 +264,7 @@ export default function ContactSection() {
             title="KNUST Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31702.157405647667!2d-1.595732258073867!3d6.675433672447844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb946c39956a09%3A0x67868ca2b098015f!2sKwame%20Nkrumah%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sgh!4v1733419547540"
             width="100%"
-            height="400"
+            height="300"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full outline-none border-none grayscale-[20%]"

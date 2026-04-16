@@ -25,9 +25,9 @@ export default function HomePage() {
       {/* Overlapping white card wrapper */}
       <div className="relative z-20 -mt-16 md:-mt-24 w-full bg-white rounded-t-[3rem] md:rounded-t-[4rem] shadow-[0_-10px_40px_rgba(0,0,0,0.08)] overflow-hidden">
         <PartnersSection />
+        <AboutSection />
         <ImpactStatsSection />
         <WhatWeDoSection />
-        <AboutSection />
         <Project />
         <ActionCall />
         <Events />

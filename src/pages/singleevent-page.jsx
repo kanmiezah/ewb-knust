@@ -148,7 +148,7 @@ export default function SingleEvent() {
       <div className="flex flex-col items-center justify-center min-h-[70vh] bg-white px-4">
         <h2 className="text-2xl font-medium text-[#111] mb-2">Event Not Found</h2>
         <p className="text-sm text-black/50 mb-8">The event you are looking for does not exist or has passed.</p>
-        <Link to="/events" className="px-6 py-3 bg-[#111] text-white text-[17px] font-semibold rounded-full hover:bg-[#222] transition">
+        <Link to="/events" className="px-6 py-3.5 sm:py-3 bg-[#111] text-white text-[15px] sm:text-[17px] font-semibold rounded-full hover:bg-[#222] transition w-full sm:w-max text-center">
           Return to Events
         </Link>
       </div>
@@ -197,7 +197,7 @@ export default function SingleEvent() {
                  </span>
               )}
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-[4rem] font-medium text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-medium text-white leading-[1.1] tracking-tight mb-6">
               {event.title || "Untitled Event"}
             </h1>
             {event.description && (
@@ -237,7 +237,7 @@ export default function SingleEvent() {
           </div>
 
           {/* Event Meta Grid */}
-          <div className="bg-[#F5F5F3] rounded-[1.5rem] p-6 sm:p-8 grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+          <div className="bg-[#F5F5F3] rounded-[1.5rem] p-5 sm:p-6 md:p-8 grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 mb-12">
              <div>
                 <span className="text-[11px] font-bold uppercase tracking-widest text-black/40 block mb-2">
                   Date

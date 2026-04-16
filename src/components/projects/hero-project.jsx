@@ -32,12 +32,12 @@ export default function HeroProjectSection() {
         </motion.div>
 
         {/* Right Image Container */}
-        <div className="absolute right-0 bottom-0 w-[85%] h-[50%] md:w-[50%] md:h-[110%] pointer-events-none z-0">
+        <div className="absolute right-0 bottom-0 w-[95%] h-[60%] sm:w-[85%] sm:h-[60%] md:w-[50%] md:h-[110%] pointer-events-none z-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.96, x: 40 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 1.1, ease: "easeOut" }}
-            className="relative w-full h-full rounded-tl-[3rem] md:rounded-tl-[4rem] overflow-hidden shadow-2xl"
+            className="relative w-full h-full rounded-tl-[2.5rem] md:rounded-tl-[4rem] overflow-hidden shadow-2xl"
           >
             <img
               src={Img1}
@@ -45,8 +45,9 @@ export default function HeroProjectSection() {
               className="w-full h-full object-cover object-center grayscale-[15%]"
               loading="eager"
             />
-            {/* Soft left edge blend */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#117DBE]/60 via-[#117DBE]/20 to-transparent w-1/3" />
+            {/* Soft edge blends for better legibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#117DBE] via-[#117DBE]/30 to-transparent w-1/2 md:w-1/3" />
+            <div className="absolute top-0 inset-x-0 h-1/3 bg-gradient-to-b from-[#117DBE] to-transparent md:hidden" />
           </motion.div>
         </div>
       </div>

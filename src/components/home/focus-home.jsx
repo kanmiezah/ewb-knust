@@ -42,7 +42,7 @@ export default function WhatWeDoSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-20 md:mb-28"
+          className="text-center mb-12 sm:mb-16 md:mb-28"
         >
           <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-black/30">
             Our Services
@@ -50,7 +50,7 @@ export default function WhatWeDoSection() {
         </motion.div>
 
         {/* Service Rows */}
-        <div className="flex flex-col gap-28 md:gap-36">
+        <div className="flex flex-col gap-16 sm:gap-20 md:gap-36">
           {services.map((service, index) => {
             const isReversed = index % 2 !== 0;
 

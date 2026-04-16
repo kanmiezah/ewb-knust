@@ -11,11 +11,11 @@ export default function MediaPage() {
         <title>Insights & Stories — EWB-KNUST Blog</title>
         <meta name="description" content="Read articles, insights, and stories from Engineers Without Borders KNUST. Stay informed about our initiatives, community impact, and engineering solutions." />
       </Helmet>
-      <div className="pt-32 pb-40 md:pt-36 md:pb-56 overflow-hidden relative w-full text-center px-6">
+      <div className="pt-28 pb-36 sm:pt-32 sm:pb-40 md:pt-36 md:pb-56 overflow-hidden relative w-full text-center px-6">
          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-white/60 block mb-5 relative z-10">
             Journal
          </span>
-         <h1 className="text-[2.8rem] sm:text-5xl md:text-[4rem] font-medium text-white tracking-tight leading-[1.08] relative z-10">
+         <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-[4rem] font-medium text-white tracking-tight leading-[1.08] relative z-10">
             Insights & <br />
             stories.
          </h1>

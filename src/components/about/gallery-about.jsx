@@ -86,7 +86,7 @@ export default function Gallery() {
           <Link
              to="/gallery"
              onClick={() => window.scrollTo(0, 0)}
-             className="inline-flex mx-auto md:mx-0 items-center gap-2 px-6 py-3 rounded-full bg-[#111] hover:bg-[#222] text-white text-[14px] font-semibold transition-all duration-300 w-max shadow-md hover:-translate-y-0.5"
+             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-3 rounded-full bg-[#111] hover:bg-[#222] text-white text-[15px] sm:text-[14px] font-semibold transition-all duration-300 w-full md:w-max shadow-md hover:-translate-y-0.5"
           >
              View Full Gallery <ArrowUpRight className="w-4 h-4" />
           </Link>

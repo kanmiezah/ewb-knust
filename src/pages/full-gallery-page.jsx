@@ -55,11 +55,11 @@ export default function FullGalleryPage() {
         <meta name="description" content="Browse photos from Engineers Without Borders KNUST events, projects, and community initiatives. See our team in action across Ghana." />
       </Helmet>
       {/* Immersive Hero */}
-      <div className="pt-32 pb-40 md:pt-36 md:pb-56 overflow-hidden relative w-full text-center px-6">
+      <div className="pt-28 pb-36 sm:pt-32 sm:pb-40 md:pt-36 md:pb-56 overflow-hidden relative w-full text-center px-6">
          <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-white/60 block mb-5 relative z-10">
             EWB-KNUST in Action
          </span>
-         <h1 className="text-[3rem] sm:text-5xl md:text-[4rem] lg:text-[5rem] font-medium text-white tracking-tight leading-[1.08] relative z-10">
+         <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-[4rem] lg:text-[5rem] font-medium text-white tracking-tight leading-[1.08] relative z-10">
             Full Gallery
          </h1>
          <div className="absolute inset-0 bg-gradient-to-br from-[#1A95E0]/40 via-transparent to-[#0D6294]/30 pointer-events-none" />

@@ -122,7 +122,7 @@ export default function SingleProject() {
       <div className="flex flex-col items-center justify-center min-h-[70vh] bg-white px-4">
         <h2 className="text-2xl font-medium text-[#111] mb-2">Project Not Found</h2>
         <p className="text-sm text-black/50 mb-8">The project you are looking for does not exist.</p>
-        <Link to="/projects" className="px-6 py-3 bg-[#111] text-white text-[17px] font-semibold rounded-full hover:bg-[#222] transition">
+        <Link to="/projects" className="px-6 py-3.5 sm:py-3 bg-[#111] text-white text-[15px] sm:text-[17px] font-semibold rounded-full hover:bg-[#222] transition w-full sm:w-max text-center">
           Return to Projects
         </Link>
       </div>
@@ -163,7 +163,7 @@ export default function SingleProject() {
                 </span>
               </div>
             )}
-            <h1 className="text-3xl md:text-5xl lg:text-[4rem] font-medium text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-medium text-white leading-[1.1] tracking-tight mb-6">
               {project.title || "Untitled Project"}
             </h1>
             {project.location && (

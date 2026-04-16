@@ -11,11 +11,11 @@ export default function ContactPage() {
         <title>Contact Us — EWB-KNUST</title>
         <meta name="description" content="Get in touch with Engineers Without Borders KNUST. Reach out to collaborate, volunteer, or learn more about our engineering projects for community development." />
       </Helmet>
-      <div className="pt-32 pb-40 md:pt-36 md:pb-56 overflow-hidden relative w-full text-center px-6">
+      <div className="pt-28 pb-36 sm:pt-32 sm:pb-40 md:pt-36 md:pb-56 overflow-hidden relative w-full text-center px-6">
          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-white/60 block mb-5 relative z-10">
             Reach Out
          </span>
-         <h1 className="text-[2.8rem] sm:text-5xl md:text-[4rem] font-medium text-white tracking-tight leading-[1.08] relative z-10">
+         <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-[4rem] font-medium text-white tracking-tight leading-[1.08] relative z-10">
             Let's connect.
          </h1>
          {/* Subtle gradient overlay */}

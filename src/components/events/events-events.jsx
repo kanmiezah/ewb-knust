@@ -141,7 +141,7 @@ export default function EventsSection() {
               viewport={{ once: true }}
               variants={fadeUp}
             >
-              <h2 className="text-3xl md:text-5xl font-medium text-[#111] tracking-tight leading-[1.1] mb-5">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-medium text-[#111] tracking-tight leading-[1.1] mb-5">
                 {heroEvent.title}
               </h2>
 
@@ -180,7 +180,7 @@ export default function EventsSection() {
               </div>
 
               {/* CTA - Link to single event */}
-              <Link to={`/events/${heroEvent.slug?.current}`} onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#117DBE] text-white text-[17px] font-semibold hover:bg-[#0D6294] transition-all duration-300 hover:shadow-lg">
+              <Link to={`/events/${heroEvent.slug?.current}`} onClick={() => window.scrollTo(0, 0)} className="inline-flex justify-center items-center gap-2 px-7 py-3.5 sm:py-3 rounded-full bg-[#117DBE] text-white text-[15px] sm:text-[17px] font-semibold hover:bg-[#0D6294] transition-all duration-300 hover:shadow-lg w-full sm:w-max">
                 View Event Details
               </Link>
             </motion.div>
@@ -191,7 +191,7 @@ export default function EventsSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="overflow-hidden rounded-[2rem] h-[400px] sm:h-[450px] md:h-[500px] bg-[#F5F5F3]"
+              className="overflow-hidden rounded-[2rem] h-[300px] sm:h-[400px] md:h-[500px] bg-[#F5F5F3]"
             >
               <img
                 src={heroEvent.mainImage?.asset?.url || "https://via.placeholder.com/800"}

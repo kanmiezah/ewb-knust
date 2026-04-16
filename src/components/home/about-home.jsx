@@ -26,7 +26,7 @@ export default function AboutSection() {
               About EWB
             </motion.span>
 
-            <h2 className="text-white text-3xl md:text-4xl font-medium leading-tight tracking-tight mb-5">
+            <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-medium leading-tight tracking-tight mb-5">
               Engineers{" "}
               <br className="hidden md:block" />
               without borders{" "}
@@ -40,16 +40,16 @@ export default function AboutSection() {
               that need it most.
             </p>
 
-            <div className="flex items-center gap-4">
-              <Link to="/membership" onClick={() => window.scrollTo(0, 0)}>
-                <button className="rounded-full bg-white px-6 py-2.5 text-[17px] font-semibold text-[#111] transition-all duration-300 hover:shadow-lg hover:scale-[1.03]">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 w-full">
+              <Link to="/membership" onClick={() => window.scrollTo(0, 0)} className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto rounded-full bg-white px-6 py-3.5 sm:py-2.5 text-[17px] font-semibold text-[#111] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                   Join
                 </button>
               </Link>
               <Link
                 to="/about"
                 onClick={() => window.scrollTo(0, 0)}
-                className="text-white/60 hover:text-white text-[17px] font-medium transition-colors flex items-center gap-1.5"
+                className="text-white/60 hover:text-white text-[17px] font-medium transition-colors flex items-center justify-center gap-1.5 py-2"
               >
                 Learn more <span className="text-base">→</span>
               </Link>
@@ -62,15 +62,16 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="relative w-full h-64 md:h-full min-h-[300px]"
+            className="relative w-full h-72 sm:h-80 md:h-full min-h-[280px] sm:min-h-[320px]"
           >
             <img
               src={Img1}
               alt="Engineers Without Borders Project"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Subtle left edge blend */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#111]/30 via-transparent to-transparent" />
+            {/* Edge blends for both mobile (top) and desktop (left) */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#111]/30 to-transparent hidden md:block w-1/2" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#111] via-[#111]/30 to-transparent md:hidden h-1/2" />
           </motion.div>
         </motion.div>
       </div>

@@ -89,7 +89,7 @@ export default function HeroEventSection() {
            <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#117DBE] bg-[#117DBE]/10 px-4 py-2 rounded-full inline-block">
              Upcoming Action
            </span>
-           <h2 className="text-3xl md:text-5xl font-medium text-[#111] mt-6 tracking-tight">
+           <h2 className="text-2xl sm:text-3xl md:text-5xl font-medium text-[#111] mt-6 tracking-tight">
              Join our next mission
            </h2>
         </motion.div>
@@ -100,7 +100,7 @@ export default function HeroEventSection() {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative w-full h-[550px] md:h-[650px] rounded-[2rem] md:rounded-[3rem] overflow-hidden group shadow-2xl"
+          className="relative w-full h-[400px] sm:h-[500px] md:h-[650px] rounded-[2rem] md:rounded-[3rem] overflow-hidden group shadow-2xl"
         >
           {/* Background Image */}
           <img
@@ -114,7 +114,7 @@ export default function HeroEventSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90" />
           
           {/* Content Wrapper */}
-          <div className="absolute inset-0 p-8 sm:p-12 md:p-16 flex flex-col justify-end">
+          <div className="absolute inset-0 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-end">
             
             {/* Top Right Date Badge */}
             <div className="absolute top-8 right-8 md:top-12 md:right-12 hidden sm:flex flex-col items-center justify-center w-24 h-24 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl">
@@ -141,7 +141,7 @@ export default function HeroEventSection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-4xl md:text-5xl lg:text-[4rem] font-medium text-white tracking-tight leading-[1.05] mb-6 drop-shadow-sm transition-colors group-hover:text-white">
+              <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4rem] font-medium text-white tracking-tight leading-[1.05] mb-4 sm:mb-6 drop-shadow-sm transition-colors group-hover:text-white">
                 {heroEvent.title}
               </h3>
 
@@ -165,18 +165,18 @@ export default function HeroEventSection() {
               )}
 
               {/* Actions */}
-              <div className="flex items-center gap-6">
+              <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 sm:gap-6 w-full">
                  <Link
                     to={`/events/${heroEvent.slug?.current}`}
                     onClick={() => window.scrollTo(0, 0)}
-                    className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#111] rounded-full text-[15px] font-bold tracking-wide hover:bg-[#F5F5F3] hover:scale-105 transition-all duration-300 shadow-xl"
+                    className="inline-flex w-full sm:w-auto justify-center px-8 py-4 bg-white text-[#111] rounded-full text-[15px] font-bold tracking-wide hover:bg-[#F5F5F3] hover:scale-105 transition-all duration-300 shadow-xl"
                  >
                     Get Details
                  </Link>
                  <Link
                     to="/contact"
                     onClick={() => window.scrollTo(0, 0)}
-                    className="group flex items-center gap-2 text-white/80 hover:text-white text-[15px] font-medium transition-colors"
+                    className="group flex flex-row items-center justify-center w-full sm:w-auto gap-2 py-2 text-white/80 hover:text-white text-[15px] font-medium transition-colors"
                  >
                     Have questions?
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

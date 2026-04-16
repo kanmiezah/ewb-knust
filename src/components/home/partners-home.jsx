@@ -27,10 +27,20 @@ export default function PartnersSection() {
   }, []);
 
   return (
-    <section className="w-full px-6 pt-16 pb-6 md:pt-20 md:pb-8">
+    <section className="w-full px-4 sm:px-6 pt-12 pb-6 sm:pt-16 md:pt-20 md:pb-8">
       <div className="mx-auto max-w-5xl">
-        {/* Thin separator line */}
-        <div className="w-full h-px bg-black/[0.06] mb-12" />
+        {/* Section heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-black/30">
+            Our Partners
+          </span>
+        </motion.div>
 
         {/* Error */}
         {error && (
